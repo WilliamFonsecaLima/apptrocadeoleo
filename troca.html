@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Troca de Oleo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='js/main.js' defer></script>
+    <br>
+   <div class="center menutema">
+    <a class="menu" href="index.html">
+    <img class="img " src="img/botao-home.png" alt="botao inicial" ></a>
+    <a class="menu" href="troca.html">
+    <img class="img" src="img/oleo.png" alt="botao para o cadastro de troca de oleo" ></a>
+   <a class="menu" href="historico.html">
+    <img class="img" src="img/calendar.png" alt="botao para acessar o historico de troca" >
+   </a>
+</div>
+
+
+</head>
+<br>
+
+<body>
+   
+    <div class="center">
+        <h1>Cadastro de troca de Óleo</h1>
+        <br>
+        <h2>Tipo de Óleo ?</h2>
+        <details Tipos de Óleo>
+          <h1>  20W-50:
+  
+  O "20W" se refere à viscosidade do óleo a baixas temperaturas (o "W" significa "Winter" ou inverno). Quanto menor o número, mais fluido o óleo é a baixas temperaturas.
+  O "50" representa a viscosidade do óleo a altas temperaturas. Quanto maior o número, mais espesso o óleo é a altas temperaturas.
+  O óleo 20W-50 é mais espesso a altas temperaturas, tornando-o adequado para motores que operam em climas mais quentes ou em condições de carga pesada, como em motocicletas de grande cilindrada ou motos usadas para transporte pesado.
+  <br>
+  <br>
+  10W-30:
+  
+  O "10W" indica que o óleo tem uma viscosidade mais baixa em temperaturas frias, tornando-o mais adequado para invernos ou regiões mais frias.
+  O "30" representa a viscosidade do óleo a altas temperaturas.
+  O óleo 10W-30 é mais fino a baixas temperaturas, tornando-o bom para arranques em clima frio, mas ainda oferece uma proteção razoável em temperaturas mais altas. É uma escolha comum para motocicletas usadas em condições variáveis de temperatura.
+  <br>
+  <br>
+  10W-40:
+  
+  Novamente, o "10W" se refere à viscosidade a baixas temperaturas.
+  O "40" indica a viscosidade a altas temperaturas.
+  O óleo 10W-40 é semelhante ao 10W-30 em relação à viscosidade em temperaturas frias, mas é um pouco mais espesso a altas temperaturas. É uma escolha versátil, adequada para climas moderados e motores que não estão sujeitos a cargas extremamente pesadas.
+  <br>
+  <br>
+  A escolha do óleo depende do clima, das condições de uso e das especificações recomendadas pelo fabricante da motocicleta.<br>
+   Certifique-se sempre de usar o tipo de óleo recomendado no manual do proprietário da sua motocicleta para garantir o melhor desempenho e durabilidade do motor.
+  
+  </h1>
+  
+  
+  
+          </details>
+        <input type="text" id="oleo" placeholder="Tipo de Oleo"  list="oleo1">
+        <datalist id="oleo1">
+          <option value="20 W-50">20 W-50</option>
+          <option value="10 W-30">10 W-30</option>
+          <option value="10 W-40">10 W-40</option>
+          
+        </datalist>
+       
+        <br>
+        <br>
+        <h2>KM atual da Moto ?</h2>
+        <input type="number" id="kmatual" placeholder="KM atual"  min="1" max="900" >
+        <br>
+        <br>
+        <h2>Com quantos KM você troca o Óleo da sua Moto ?</h2>
+        <input type="radio"class="option-input radio" id="mil" name="myGroup" value="1000">
+        <label>1000 KM</label>
+        <input type="radio"class="option-input radio" id="doismil" name="myGroup" value="2000">
+        <label>2000 KM</label>
+        <br>
+        
+       
+        
+        <br>
+        <br>
+        <h2>Media de KM rodado diariamente ?</h2>
+        <input type="number" id="kmdia" placeholder="KM diario"  min="1" max="900" step="10" value="10">
+        <br>
+        
+        <br>
+        <button class="btn-7 custom-btn" onclick="Calcular()"alt="botao de cacastro da troca de oleo"> Calcular proxima Troca </button>
+       
+        
+        <dialog id="dialog">
+          
+          <br>
+            <label id="resultado"></label>
+       
+            <br>
+            <label id="date"></label>
+            <br>
+            <label id="toleo"></label>
+            <br>
+            <label id="km"></label>
+            <br>
+            <button class="btn-7 custom-btn  " id="fechar-modal" > Voltar </button>
+            <a href="historico.html">
+            <button class="btn-7 custom-btn"   > Historico </button></a>
+           <br>
+           <br>
+           
+        </dialog>
+        <br>
+       
+        
+        
+    </div>
+</body>
+<br>
+<footer class="center  ">
+    <img class="logo" src="img/logo4tree.png" alt="">
+  </footer></html>
